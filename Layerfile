@@ -21,8 +21,8 @@ RUN make -j 6
 RUN sudo make altinstall
 RUN python3.11 -m pip install --upgrade pip
 WORKDIR /root/SP
-RUN git clone https://github.com/freshremix/ispdj.git
-WORKDIR /root/SP/ispdj
+RUN git clone https://github.com/freshremix/SPMJ.git
+WORKDIR /root/SP/SPMJ
 RUN pip3.11 install -r requirements.txt
 RUN ls
 RUN BACKGROUND python3.11 main.py && \
